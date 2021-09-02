@@ -40,3 +40,39 @@ body {
 h1 {
   text-align: center;
 }
+
+body::after {
+  text-align: center;
+  content: "";
+  white-space: pre;
+  font-size: 4rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  animation-name: change-imotion;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
+@keyframes change-imotion {
+  0% {
+    color: black;
+    content: 'Prease Press \A "Ctrl + Shift + I " \A 😃';
+  }
+
+  33% {
+    color: black;
+    content: 'Prease Press \A "Ctrl + Shift + I " \A 😄';
+  }
+
+  66% {
+    color: gray;
+    content: 'Prease Press \A "Ctrl + Shift + I " \A 🙄';
+  }
+  100% {
+    color: gray;
+    content: 'Prease Press \A "Ctrl + Shift + I " \A 😎';
+  }
+}
