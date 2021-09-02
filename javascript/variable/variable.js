@@ -96,3 +96,18 @@ const gSymbol1 = Symbol.for(`id`);
 const gSymbol2 = Symbol.for(`id`);
 console.log(gSymbol1 === gSymbol2); // true
 console.log(`value: ${symbol1.description}, type: ${typeof symbol1}`);
+
+// object, real-life object, data structure
+// const ellie = { name = 'ellie', age: 22 }; // 안되는데 왜 안되는지 모르겠음
+// console.log(ellie);
+
+// 5. Dynamic typing: dynamically typed language
+let text = "hello";
+console.log(text.charAt(0));
+console.log(`value: ${text}, type: ${typeof text}`);
+text = 1;
+console.log(`value: ${text}, type: ${typeof text}`);
+text = "7" + 5;
+console.log(`value: ${text}, type: ${typeof text}`);
+text = "7" / "5";
+console.log(`value: ${text}, type: ${typeof text}`);
