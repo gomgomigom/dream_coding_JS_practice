@@ -197,6 +197,23 @@ const calculate4 = function calculated(command, a, b) {
     return "sorry..😥 This command is not supported..😫 please check command";
   }
 };
+
+function calculate_answer(command, a, b) {
+  switch (command) {
+    case "add":
+      return a + b;
+    case "substract":
+      return a - b;
+    case "divide":
+      return a / b;
+    case "multiply":
+      return a * b;
+    case "remainder":
+      return a % b;
+    default:
+      return "sorry..😥 This command is not supported😫";
+  }
+}
 console.log(calculate("add", 5, 4));
 console.log(calculate("add", 5, 4));
 console.log(calculate("substract", 5, 4));
@@ -213,3 +230,11 @@ console.log(calculate3("substract", 7, 4));
 
 console.log(calculate4("add", 7, 4));
 console.log(calculate4("substract", 7, 4));
+
+console.log(calculate_answer("add", 5, 4));
+console.log(calculate_answer("add", 5, 4));
+console.log(calculate_answer("substract", 5, 4));
+console.log(calculate_answer("divide", 5, 4));
+console.log(calculate_answer("remainder", 5, 4));
+console.log(calculate_answer("multiply", 5, 4));
+console.log(calculate_answer("addd", 5, 4));
