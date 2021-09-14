@@ -1,3 +1,5 @@
+"use strict";
+
 // Don't give up
 
 // 함수 선언
