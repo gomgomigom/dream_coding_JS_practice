@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 // Object-oriendted programming
 // class : template
 // object: instance of a class
@@ -9,10 +9,11 @@
 // 1. Class declarations
 class Person {
   // constructor
-  constructor(name, age) {
+  constructor(name, age, state) {
     // fields
     this.name = name;
     this.age = age;
+    this.state = state;
   }
 
   // methods
@@ -21,10 +22,13 @@ class Person {
   }
 }
 
-const gom = new Person("gom", 22);
+const gom = new Person('gom', 22);
+const mi = new Person('mi', 32);
+console.log(gom);
 console.log(gom.name);
 console.log(gom.age);
 gom.speak();
+console.log(mi.name);
 
 // 2. Getter and setters
 class User {
@@ -46,7 +50,7 @@ class User {
   }
 }
 
-const user1 = new User("steve", "Job", -1);
+const user1 = new User('steve', 'Job', -1);
 console.log(user1.age);
 
 // 3. Fields (public, private)
@@ -63,7 +67,7 @@ console.log(experiment.privateField);
 // 4. Static properties and methods
 // Too soon!
 class Article {
-  static publisher = "gomigom";
+  static publisher = 'gomigom';
   constructor(articleNumber) {
     this.articleNumber = articleNumber;
   }
@@ -112,10 +116,10 @@ class Triangle extends Shape {
   }
 }
 
-const rectangle = new Rectangle(20, 20, "blue");
+const rectangle = new Rectangle(20, 20, 'blue');
 rectangle.draw();
 console.log(rectangle.getArea());
-const triangle = new Triangle(20, 30, "red");
+const triangle = new Triangle(20, 30, 'red');
 triangle.draw();
 console.log(triangle.getArea());
 

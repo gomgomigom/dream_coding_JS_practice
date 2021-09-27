@@ -1,6 +1,6 @@
 // 1. String concatenation
-console.log("my" + " cat");
-console.log("1" + 2);
+console.log('my' + ' cat');
+console.log('1' + 2);
 console.log(`string literals: 1 + 2 = ${1 + 2}`);
 console.log("ellie's \n\tbook");
 
@@ -26,9 +26,9 @@ console.log(`postIncrement: ${postIncrement}, counter: ${counter}`);
 // 4. Assignment operators
 let x = 3;
 let y = 6;
-x += y; // x = x + y
-x *= y;
-x /= y;
+console.log((x += y)); // x = x + y
+console.log((x *= y));
+console.log((x /= y));
 
 // 5. Comparison operators
 console.log(10 < 6); // less than
@@ -40,10 +40,10 @@ console.log(10 >= 6); // greater than or equal
 const value1 = false;
 const value2 = 4 < 2;
 
-console.log("--------------------------");
+console.log('--------------------------');
 // || (or), finds the first truthy value
 console.log(`or: ${value1 || value2 || check()}`);
-console.log("--------------------------");
+console.log('--------------------------');
 
 // && (and), finds the first falsy value
 console.log(`and: ${value1 && value2 && check()}`);
@@ -57,79 +57,79 @@ console.log(`and: ${value1 && value2 && check()}`);
 function check() {
   for (let i = 0; i < 10; i++) {
     //wasting time
-    console.log("😱");
+    console.log('😱');
   }
   return true;
 }
 
-console.log("--------------------------");
+console.log('--------------------------');
 // ! (not)
 console.log(!value1);
 
-console.log("--------------------------");
+console.log('--------------------------');
 // 7. Equality
-const stringFive = "5";
+const stringFive = '5';
 const numberFive = 5;
 
 // == loose equality, with type conversion
 console.log(stringFive == numberFive);
 console.log(stringFive != numberFive);
-console.log("--------------------------");
+console.log('--------------------------');
 
 // === strict equality, no type conversion
 console.log(stringFive === numberFive);
 console.log(stringFive !== numberFive);
 
-console.log("--------------------------");
+console.log('--------------------------');
 // object equality by reference
-const ellie1 = { name: "ellie" };
-const ellie2 = { name: "ellie" };
+const ellie1 = { name: 'ellie' };
+const ellie2 = { name: 'ellie' };
 const ellie3 = ellie1;
 console.log(ellie1 == ellie2);
 console.log(ellie1 === ellie2);
 console.log(ellie1 === ellie3);
-console.log("--------------------------");
+console.log('--------------------------');
 
-console.log("--------------------------");
+console.log('--------------------------');
 // equality - puzzler
 console.log(0 == false);
 console.log(0 === false);
-console.log("" == false);
-console.log("" === false);
+console.log('' == false);
+console.log('' === false);
 console.log(null == undefined);
 console.log(null === undefined);
-console.log("--------------------------");
+console.log('--------------------------');
 
 // 8. Conditional operators: if
 // if, else if, else
-const names = "df";
-if (names === "ellie") {
-  console.log("welcome, Ellie");
-} else if (names === "coder") {
-  console.log("You are amazing coder");
+const names = 'df';
+if (names === 'ellie') {
+  console.log('welcome, Ellie');
+} else if (names === 'coder') {
+  console.log('You are amazing coder');
 } else {
-  console.log("unkwnon");
+  console.log('unknown');
 }
 
 // 9. Ternary operator: ?
 // condition ? value1 : value2;
-console.log(names === "ellie" ? "yes" : "no");
+console.log(names === 'ellie' ? 'yes' : 'no');
 
 // 10. Switch statement
 // use for multiple if checks
 // use for enum-like value check
 // use for multiple type checks in TS
-const browser = "IE";
+const browser = 'IE';
 switch (browser) {
-  case "IE":
-    console.log("go away!");
+  case 'IE':
+    console.log('go away!');
     break;
-  case "Chrome":
-  case "Firefox":
-    console.log("love you!");
+  case 'Chrome':
+  case 'Firefox':
+    console.log('love you!');
     break;
   default:
-    console.log("same all!");
+    console.log('same all!');
     break;
 }
 
@@ -141,7 +141,7 @@ while (i > 0) {
   console.log(`while: ${i}`);
   i--;
 }
-
+console.log(i);
 // do while loop, body code is executed first,
 // then check the condition.
 do {
